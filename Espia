@@ -1,0 +1,36 @@
+public class Espia {
+
+    // atributos
+    String nombreClave;
+    int informantesActivos;
+    String barrioBase;
+
+    // constructor
+    public Espia(String nombreClave, int informantesActivos, String barrioBase) {
+
+//this es el atributo del objeto
+ //nombreClave parametro que llego al constructor
+        this.nombreClave = nombreClave;
+        this.informantesActivos = informantesActivos;
+        this.barrioBase = barrioBase;
+    }
+
+    // Método =  Una acción que puede realizar el objeto.
+    public void informarRed() {
+
+        System.out.println("La agente " + nombreClave);
+
+        System.out.println("Tiene " + informantesActivos + " informantes");
+
+        System.out.println("Su base esta en " + barrioBase);
+    }
+
+    // Main = Punto de inicio del programa.
+    public static void main(String[] args) {
+
+        Espia agente1 = new Espia("Mariposa de Acero", 8, "La Gabriela");
+
+        agente1.informarRed();
+        
+    }
+}
